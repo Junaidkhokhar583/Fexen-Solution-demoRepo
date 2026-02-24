@@ -13,9 +13,9 @@ export function Header() {
         </a>
 
         <ul className="py-4 flex justify-between lg:flex gap-12.5 text-sm font-light font-inter text-nowrap items-center">
-          <a href="#"><li>Work</li></a>
-          <a href="#"><li>Career</li></a>
-          <a href="#"><li>Insights</li></a>
+          <a href="#"><li className="text-sm 2xl:text-base">Work</li></a>
+          <a href="#"><li className="text-sm 2xl:text-base">Career</li></a>
+          <a href="#"><li className="text-sm 2xl:text-base">Insights</li></a>
         </ul>
 
         <a href="#" className="self-center">
