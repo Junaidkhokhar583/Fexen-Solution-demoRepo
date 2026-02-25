@@ -1,5 +1,6 @@
 import "./App.css";
 import { Card } from "./components/Card";
+import { HoverCard } from "./components/hoverCard";
 import { Header } from "./components/Header";
 
 function App() {
@@ -131,19 +132,21 @@ function App() {
                 <h3 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
                   7700+
                 </h3>
-                <p class="text-gray-400">Years of continual excellence</p>
+                <p class="text-gray-400">Change makers driving revolution</p>
               </div>
               <div>
                 <h3 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
                   16+
                 </h3>
-                <p class="text-gray-400">Years of continual excellence</p>
+                <p class="text-gray-400">
+                  Countries with our presence and clientele
+                </p>
               </div>
               <div>
                 <h3 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
                   300+
                 </h3>
-                <p class="text-gray-400">Years of continual excellence</p>
+                <p class="text-gray-400">Active clients across the globe</p>
               </div>
             </div>
           </div>
@@ -153,13 +156,123 @@ function App() {
               experience with strategic partner ecosystem.
             </h2>
             <div className="flex flex-row">
-              <img src="Informatica.webp" alt="informatica.png" className="object-none scale-50"></img>
-              <img src="sales-force.webp" alt="sales-force.png" className="object-none scale-50"></img>
-              <img src="AWS.webp" alt="aws.png" className="object-none scale-50"></img>
-              <img src="SAP.webp" alt="sap.png" className="object-none scale-50"></img>
-              <img src="cloudera.webp" alt="cloudera.png" className="object-none scale-50"></img>
+              <img
+                src="Informatica.webp"
+                alt="informatica.png"
+                className="object-none scale-50"
+              ></img>
+              <img
+                src="sales-force.webp"
+                alt="sales-force.png"
+                className="object-none scale-50"
+              ></img>
+              <img
+                src="AWS.webp"
+                alt="aws.png"
+                className="object-none scale-50"
+              ></img>
+              <img
+                src="SAP.webp"
+                alt="sap.png"
+                className="object-none scale-50"
+              ></img>
+              <img
+                src="cloudera.webp"
+                alt="cloudera.png"
+                className="object-none scale-50"
+              ></img>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-15 relative">
+        <div className="absolute bottom-0 -z-30 left-0">
+          <img
+            src="/section3-bg.webp"
+            alt="loading.png"
+            width={600}
+            height={600}
+          ></img>
+        </div>
+        <div className="p-30">
+          <div className="flex flex-col 2xl:flex-row gap-8 2xl:gap-12">
+            <div className="2xl:w-[30%] 2xl:shrink-0  self-start">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl text-black md:leading-18">
+                Our
+                <br />
+                Fundamental
+                <br />
+                Process
+              </h2>
+              <div className="flex gap-1 mt-2">
+                <button className="px-5 text-nowrap py-1.5 cursor-pointer font-inter rounded-[60px] text-sm font-medium flex items-center justify-center border border-black text-black bg-transparent hover:text-white hover:bg-black font-s1-pro-display">
+                  Work With Us
+                </button>
+                <span className="w-10 h-10 rounded-full bg-white border border-black flex justify-center items-center hover:bg-white/80 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.45001 14.0005L6.20314 12.7754L11.1031 7.87529H0.450012V6.12523H11.1031L6.20314 1.22504L7.45001 0L14.45 7.00025L7.45001 14.0005Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+              <HoverCard
+                hText="Planning"
+                pText="At the start of each project, we work with our customers to build a solid project plan. The initial Scope document can come from the client or a combined process of phone calls and in-person meetings."
+                num="01"
+              />
+              <HoverCard
+                hText="Wireframing"
+                pText="Once the project plan and scope have been finalized, our wireframing team takes over to determine the placement of all objects on each page of the application, whether it is a consumer mobile app or a backend business application. This is an important stage where we come to a final agreement on what will be placed on each page for the User to access."
+                num="02"
+              />
+              <HoverCard
+                hText="Design"
+                pText="After the wireframes for all pages have been finalized, our design team takes over to create the final appearance and functionality of the application. This is an exciting stage of the project where you can see the entire application come to life. We will provide you with clickable versions to fully experience everything the user goes through before we begin coding."
+                num="03"
+              />
+              <HoverCard
+                hText="Code"
+                pText="With the wireframes and designs finalized, we begin coding the application to make it functional. As an Agile development shop, we break down the project into baskets of features called Sprints. This approach allows our customers to regularly review the progress of their software development process and provide feedback at the end of each Sprint. We value your input and involvement throughout the entire development process."
+                num="04"
+              />
+              <HoverCard
+                hText="Testing"
+                pText="The testing process for mobile and software applications is a crucial step in ensuring that the product is functional, reliable, and user-friendly. Typically, the process involves several stages, where various techniques and tools are employed to identify defects, bugs, and usability issues. The goal is to detect and correct any issues before the application is released to the public, ultimately improving the user experience and ensuring the success of the product."
+                num="05"
+              />
+              <HoverCard
+                hText="Deployment"
+                pText="After the application is completed, approved by our internal QA, project management and the client – we are ready to deploy the code to its final destination. Hosting options vary from client-owned servers to web or cloud hosting. We guide clients through the options and handle the entire process."
+                num="06"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className=" overflow-x-clip bg-black relative py-16 sm:py-20 md:py-24 ">
+        <div className="w-full px-42 max-w-480 justify-self-center mx-auto rounded-[30px] sm:rounded-[50px] text-white relative ">
+          <div className="sticky top-18">
+            <div className="relative w-full">
+              <div className="flex w-full z-20 flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 ">
+                <h1 className="text-3xl text-white 2xl:w-[50%] sm:text-4xl md:text-5xl lg:text-6xl font-medium font-sf-pro-display">See How We Help Business Thrive</h1>
+                <p className="flex items-center 2xl:w-[50%] text-[#CFCFCF] text-sm sm:text-base md:text-lg xl:text-[20px] font-sf-pro-display lg:w-125 xl:w-146">We don't just talk about results—we deliver them. Here are some of our most impactful case studies showcasing how our digital marketing strategies drive success.</p>
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
       </section>
     </>

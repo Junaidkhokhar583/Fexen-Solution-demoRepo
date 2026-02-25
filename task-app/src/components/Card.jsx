@@ -1,4 +1,4 @@
-export function Card({dPath,hText,pText,buttons}) {
+export function Card({ dPath, hText, pText, buttons }) {
   return (
     <>
       <div className="relative cursor-pointer border border-[#F5F5F5] group w-full h-full sm:h-99.25 min-w-75 transform transition-transform md:hover:scale-105 rounded-[10px] overflow-hidden">
@@ -14,10 +14,7 @@ export function Card({dPath,hText,pText,buttons}) {
               height="47"
               viewBox="0 0 46 47"
             >
-              <path
-                d={dPath}
-                fill="grey"
-              ></path>
+              <path d={dPath} fill="grey"></path>
               <defs>
                 <linearGradient
                   id="paint0_linear_910_3199"
@@ -34,13 +31,21 @@ export function Card({dPath,hText,pText,buttons}) {
             </svg>
           </span>
           <span>
-            <h2 className="text-xl md:text-[22px] font-medium font-s1-pro-display ">{hText}</h2>
-            <p className="text-black md:group-hover:text-[#CFCFCF] transition-colors duration-300">{pText}</p>
+            <h2 className="text-xl md:text-[22px] font-medium font-s1-pro-display ">
+              {hText}
+            </h2>
+            <p className="text-black md:group-hover:text-[#CFCFCF] transition-colors duration-300">
+              {pText}
+            </p>
           </span>
 
           <div className="flex flex-wrap gap-2">
-            {buttons.map((button,index)=>(
-              <a href="#" key={index}><button className="bg-[#FAFAFA] cursor-pointer text-black text-[15px] leading-6.25 font-s1-pro-display px-3 border border-[#CFCFCF] py-1 rounded-[5px] md:hover:bg-gray-200 transition-colors">{button.text}</button></a>
+            {buttons.map((button, index) => (
+              <a href="#" key={index}>
+                <button className="bg-[#FAFAFA] cursor-pointer text-black text-[15px] leading-6.25 font-s1-pro-display px-3 border border-[#CFCFCF] py-1 rounded-[5px] md:hover:bg-gray-200 transition-colors">
+                  {button.text}
+                </button>
+              </a>
             ))}
           </div>
         </div>
