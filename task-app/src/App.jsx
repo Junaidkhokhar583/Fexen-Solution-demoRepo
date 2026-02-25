@@ -265,7 +265,7 @@ function App() {
 
       <section className=" overflow-x-clip bg-black relative py-16 sm:py-20 md:py-24 ">
         <div className="w-full px-42 max-w-480 justify-self-center mx-auto rounded-[30px] sm:rounded-[50px] text-white relative ">
-          <div className="sticky top-18">
+          <div className="">
             <div className="relative w-full">
               <div className="flex w-full z-20 flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 ">
                 <h1 className="text-3xl text-white 2xl:w-[50%] sm:text-4xl md:text-5xl lg:text-6xl font-medium font-sf-pro-display">
