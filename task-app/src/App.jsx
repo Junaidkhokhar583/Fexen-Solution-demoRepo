@@ -287,7 +287,7 @@ function App() {
       </section>
 
       <section
-        className="w-full py-50 sm:py-14 md:py-16 overflow-x-clip bg-no-repeat bg-center bg-cover"
+        className="w-full py-45 sm:py-14 md:py-40 overflow-x-clip bg-no-repeat bg-center bg-cover"
         style={{
           backgroundImage:
             "url('https://nextsensesolution.com/_next/static/media/testimonial-bg.f1089b54.svg')",
