@@ -2,6 +2,7 @@ import "./App.css";
 import { Card } from "./components/Card";
 import { HoverCard } from "./components/hoverCard";
 import { Header } from "./components/Header";
+import StackedCards from "./components/StackedCard";
 
 function App() {
   const buttonP1 = [
@@ -267,12 +268,36 @@ function App() {
           <div className="sticky top-18">
             <div className="relative w-full">
               <div className="flex w-full z-20 flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 ">
-                <h1 className="text-3xl text-white 2xl:w-[50%] sm:text-4xl md:text-5xl lg:text-6xl font-medium font-sf-pro-display">See How We Help Business Thrive</h1>
-                <p className="flex items-center 2xl:w-[50%] text-[#CFCFCF] text-sm sm:text-base md:text-lg xl:text-[20px] font-sf-pro-display lg:w-125 xl:w-146">We don't just talk about results—we deliver them. Here are some of our most impactful case studies showcasing how our digital marketing strategies drive success.</p>
+                <h1 className="text-3xl text-white 2xl:w-[50%] sm:text-4xl md:text-5xl lg:text-6xl font-medium font-sf-pro-display">
+                  See How We Help Business Thrive
+                </h1>
+                <p className="flex items-center 2xl:w-[50%] text-[#CFCFCF] text-sm sm:text-base md:text-lg xl:text-[20px] font-sf-pro-display lg:w-125 xl:w-146">
+                  We don't just talk about results—we deliver them. Here are
+                  some of our most impactful case studies showcasing how our
+                  digital marketing strategies drive success.
+                </p>
               </div>
             </div>
           </div>
-          <div></div>
+
+          <div>
+            <StackedCards />
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="w-full py-12 sm:py-14 md:py-16 overflow-x-clip bg-no-repeat bg-center bg-cover"
+        style={{
+          backgroundImage:
+            "url('https://nextsensesolution.com/_next/static/media/testimonial-bg.f1089b54.svg')",
+        }}
+      >
+        <div className="px-30 w-full gap-6 sm:gap-8 lg:gap-10 my-8 lg:my-20">
+          <h2 className="text-4xl md:text-5xl lg:text-[50px] font-semibold">
+            Words of praise from others <br />
+            about our presence
+          </h2>
         </div>
       </section>
     </>
