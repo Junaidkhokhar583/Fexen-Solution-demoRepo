@@ -3,6 +3,8 @@ import { Card } from "./components/Card";
 import { HoverCard } from "./components/hoverCard";
 import { Header } from "./components/Header";
 import StackedCards from "./components/StackedCard";
+import { InfiniteCarousel } from "./components/infiniteCarousel";
+import { Footer } from "./components/Footer";
 
 function App() {
   const buttonP1 = [
@@ -59,7 +61,7 @@ function App() {
     <>
       <Header />
 
-      <section className="p-40 ">
+      <section className="p-25 ">
         <span className="my-10">
           <h1 className="-ml-0.5 text-4xl md:text-5xl lg:text-6xl font-medium font-s1-pro-display mb-4">
             Explore What We Do
@@ -156,7 +158,7 @@ function App() {
               We rethink business growth for you through our collective
               experience with strategic partner ecosystem.
             </h2>
-            <div className="flex flex-row">
+            <div className="lg:flex lg:flex-row hidden">
               <img
                 src="Informatica.webp"
                 alt="informatica.png"
@@ -196,7 +198,7 @@ function App() {
             height={600}
           ></img>
         </div>
-        <div className="p-30">
+        <div className="p-25">
           <div className="flex flex-col 2xl:flex-row gap-8 2xl:gap-12">
             <div className="2xl:w-[30%] 2xl:shrink-0  self-start">
               <h2 className="text-4xl md:text-5xl lg:text-6xl text-black md:leading-18">
@@ -263,7 +265,7 @@ function App() {
         </div>
       </section>
 
-      <section className=" overflow-x-clip bg-black relative py-16 sm:py-20 md:py-24 ">
+      <section className="invisible 2xl:visible overflow-x-clip bg-black relative py-16 sm:py-20 md:py-24 ">
         <div className="w-full px-42 max-w-480 justify-self-center mx-auto rounded-[30px] sm:rounded-[50px] text-white relative ">
           <div className="">
             <div className="relative w-full">
@@ -287,7 +289,7 @@ function App() {
       </section>
 
       <section
-        className="w-full py-45 sm:py-14 md:py-40 overflow-x-clip bg-no-repeat bg-center bg-cover"
+        className="w-full py-30 sm:py-14 md:py-35 overflow-x-clip bg-no-repeat bg-center bg-cover"
         style={{
           backgroundImage:
             "url('https://nextsensesolution.com/_next/static/media/testimonial-bg.f1089b54.svg')",
@@ -299,7 +301,18 @@ function App() {
             about our presence
           </h2>
         </div>
+        <InfiniteCarousel/>
       </section>
+
+      <section>
+        <div className="grid gap-y-6 justify-center align-middle text-center py-4 px-4">
+          <h1 className="text-5xl font-bold font-serif">How can we help You?</h1>
+          <p className="text-2xl font-normal font-sans">Are you ready to push the boundaries and explore new frontiers of innovation?</p>
+          <button className="cursor-pointer border-2 border-solid rounded-lg bg-sky-950 text-gray-200 w-fit p-2.5 justify-self-center">LET'S WORK TOGETHER</button>
+        </div>
+      </section>
+
+      <div className="mt-10"> <Footer/></div>
     </>
   );
 }

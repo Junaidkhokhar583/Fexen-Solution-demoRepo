@@ -1,7 +1,7 @@
 export function HoverCard({ hText, pText, num }) {
   return (
     <>
-      <div className=" flex gap-4 bg-white border  hover:shadow-xl cursor-pointer hover:-translate-y-3 transition-all duration-300 ease-in-out border-black  px-6 pb-12 pt-8">
+      <div className="flex gap-4 bg-white border hover:shadow-xl cursor-pointer hover:-translate-y-3 transition-all duration-300 ease-in-out border-black px-2 pb-12 pt-8">
         <div className="shrink-0 w-15 h-15 self-center rounded-full border-2 border-white/20 flex items-center justify-center bg-black/50">
           <div className="w-22.5 h-22.5 md:w-37 md:h-37">
             <svg

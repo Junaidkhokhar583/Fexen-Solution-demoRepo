@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <>
-      <nav className="flex justify-around fixed top-0 border-b border-[#e5e7eb]/80 z-50 translate-y-0 w-full p-4 right-0 left-0 bg-white text-black ">
+      <nav className="flex justify-around fixed top-0 border-b border-[#e5e7eb]/80 z-50 translate-y-0 w-auto p-4 right-0 left-0 bg-white text-black ">
         <a href="#" className="flex self-center w-50 min-w-42.5 h-10">
           <img
             src="/logo-dark.png"
@@ -10,7 +10,7 @@ export function Header() {
           ></img>
         </a>
 
-        <ul className="py-4 flex justify-between lg:flex gap-12.5 text-sm font-light font-inter text-nowrap items-center">
+        <ul className="py-4 xl:flex hidden justify-between lg:flex gap-12.5 text-sm font-light font-inter text-nowrap items-center">
           <div className="relative group">
             <button className="flex items-center gap-1 text-sm 2xl:text-base">
               Capabilities
